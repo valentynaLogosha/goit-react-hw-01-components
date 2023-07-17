@@ -1,73 +1,87 @@
 import styled from '@emotion/styled';
 
 export const ProfileSecton = styled.div`
-    width: 100%;
-    height: auto;
-    padding-top:50px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
-    align-items: center;
+    width: 340px;
+  margin: 0 auto;
+  padding: 70px 50px;
+  background-color: darkgrey;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 `;
 
 export const Description = styled.div`
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    align-items: center;
+   width: 240px;
+  height: 220px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 `;
 
 export const Avatar = styled.img`
-    width: 300px;
-    height: 300px;
-    border: 1px solid;
-    border-color:#e1e4e8;
-    border-radius: 150px;
+   width: 100px;
+  display: block;
+  margin: 0 auto 20px;
+  border-radius: 50%;
 `;
 
 export const Name = styled.p`
-    font-size: 40px;
-    font-weight: 700;
+     text-align: center;
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 15px;
 `;
 
 export const Tag = styled.p`
-    color: #808080;
-    font-size: 24px;
+     text-align: center;
+  color: darkgrey;
+  margin-bottom: 10px;
 `;
 
 export const Location = styled.p`
-    color: #808080;
-    font-size: 24px;
+    text-align: center;
+  color: darkgrey;
 `;
 
 export const Stats = styled.ul`
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
+     width: 302px;
+  height: 100px;
+  background-color: gainsboro;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  list-style-type: none;
 `;
 
 export const Item = styled.li`
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    align-items: center;
-    border: 0.3px solid;
-    border-top: 1px solid;
-    border-color: #e1e4e8;
-    padding-top: 28px;
-    padding-bottom: 28px;
-    background-color: #f5f7fa;
+     display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid gray;
+  flex: 1;
+  text-align: center;
+
+  &:not(:last-child) {
+    border-right: 1px solid gray;
 `;
 
 export const Label = styled.span`
-    color: #808080;
-    font-size: 20px;
+     display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
 `;
 
 export const Quantity = styled.span`
-    font-size: 26px;
-    font-weight: 700;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 18px;
 `;
